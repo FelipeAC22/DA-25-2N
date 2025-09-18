@@ -1,9 +1,1 @@
-git clone https://github.com/FelipeAC22/DA-25-2N.git
-cd DA*
-mkdir aula3
-touch pokemon.txt
-cd ..
-git status
-git add aula3
-git commit -m "adicionando a pasta aula3 e o arquivo pokemon.txt"
-git push
+
