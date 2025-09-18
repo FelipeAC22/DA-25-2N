@@ -6,4 +6,5 @@ cd ..
 git status
 git add aula3
 git commit -m "adicionando a pasta aula3 e o arquivo pokemon.txt"
+git status
 git push
