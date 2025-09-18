@@ -1,6 +1,7 @@
 git clone https://github.com/FelipeAC22/DA-25-2N.git
 cd DA*
 mkdir aula3
+cd aula3
 touch pokemon.txt
 cd ..
 git status
