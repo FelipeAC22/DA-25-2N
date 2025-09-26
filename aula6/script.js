@@ -38,14 +38,7 @@ console.log(a, b, c)
 
 // "console.log(a, b, c)" imprime no console o valor das variáveis 'a', 'b' e 'c', neste caso, 10, 10, 10 //
 
-
-
-
-
-
-
 /*
-
 let p = prompt("Quantas horas você trabalha por dia?")
 let t = prompt("Quanto você recebe por dia?")
 console.log("Você recebe",t,"/",p,"por hora")
