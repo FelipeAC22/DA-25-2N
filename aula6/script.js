@@ -96,16 +96,16 @@ console.log(`Você escovou os dentes hoje? ${respostaDentesEscovados}`)
 
 // atividade 6 //
 
-let a = 10
-let b = 25
+let a6 = 10
+let b6 = 25
 
-c = b
-b = a
-a = c
+c6 = b6
+b6 = a6
+a6 = c6
 
 
-console.log("O novo valor de a é", a) // o novo valor de a deverá ser 25 //
-console.log("O novo valor de b é", b) // o novo valor de b deverá ser 10 //
+console.log("O novo valor de a é", a6) // o novo valor de a deverá ser 25 //
+console.log("O novo valor de b é", b6) // o novo valor de b deverá ser 10 //
 
 
 // -- DESAFIO OPCIONAL -- //
