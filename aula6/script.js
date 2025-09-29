@@ -114,8 +114,8 @@ let primeiroNumero = Number(prompt("Digite um número:"))
 let segundoNumero = Number(prompt("Digite outro número:"))
 
 let somaDosNumeros = primeiroNumero + segundoNumero
-let multiplicaçãoDosNumeros = primeiroNumero . segundoNumero
+let multiplicaçãoDosNumeros = primeiroNumero * segundoNumero
 
 console.log("A soma do primeiro número com o segundo número resulta em", somaDosNumeros)
-console.l9g("A multiuplicação do primeiro número com o segundo número resulta em", multiplicaçãoDosNumeros)
+console.log("A multiuplicação do primeiro número com o segundo número resulta em", multiplicaçãoDosNumeros)
 
