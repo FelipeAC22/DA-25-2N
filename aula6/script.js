@@ -99,7 +99,7 @@ console.log(`Você escovou os dentes hoje? ${respostaDentesEscovados}`)
 let a6 = 10
 let b6 = 25
 
-c6 = b6
+let c6 = b6
 b6 = a6
 a6 = c6
 
