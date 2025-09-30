@@ -12,13 +12,13 @@ console.log(calculo1, calculo2, calculo3, calculo4)
 let primeiroNumero = 5
 let segundoNumero = 10
 
-let igualA = primeiroNumero === segundoNumero
-let diferenteDe = primeiroNumero !== segundoNumero
+let igualdade = primeiroNumero === segundoNumero
+let diferenca = primeiroNumero !== segundoNumero
 let maiorQue = primeiroNumero > segundoNumero
 let menorQue = primeiroNumero < segundoNumero
 
 
-console.log("O primeiro numero é igual ao segundo?", igualA)
-console.log("O primeiro numero é diferente que o segundo?", diferenteDe)
+console.log("O primeiro numero é igual ao segundo?", igualdade)
+console.log("O primeiro numero é diferente que o segundo?", diferenca)
 console.log("O primeiro numero é maior que o segundo?", maiorQue)
 console.log("O primeiro numero é menor que o segundo?", menorQue)
