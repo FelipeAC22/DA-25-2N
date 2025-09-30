@@ -117,5 +117,5 @@ let somaDosNumeros = primeiroNumero + segundoNumero
 let multiplicaçãoDosNumeros = primeiroNumero * segundoNumero
 
 console.log("A soma do primeiro número com o segundo número resulta em", somaDosNumeros)
-console.log("A multiuplicação do primeiro número com o segundo número resulta em", multiplicaçãoDosNumeros)
+console.log("A multiplicação do primeiro número com o segundo número resulta em", multiplicaçãoDosNumeros)
 
