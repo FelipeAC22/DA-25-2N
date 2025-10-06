@@ -70,7 +70,7 @@ let xicara = 450
 let xicParaLitros = xicara * 0.24
 console.log(`${xicara} xicaras equivalem à ${xicParaLitros} litros`)
 
-// prompt do usuario //
+// input do usuario //
 
 libras = Number(prompt("digite o peso em libras(Lb) que deseja converter para quilos(Kg):"))
 lbParaKg = libras * 0.453592
