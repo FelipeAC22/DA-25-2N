@@ -10,7 +10,7 @@ console("a. ", resultado) // imprime no console a letra "a." e o valor da variá
 resultado = bool1 && bool2 && bool3 // determina que o novo valor da variável resultado será o valor retornado da operação lógia E: bool1 && bool2 && bool3, que retornará false, ja que bool2 tem o valor de false
 console.log("b. ", resultado) // imprime no console a letra "b." e o valor da variável resultado, que será false
 
-resultado = !resultado && (bool1 || bool2) // determina que o novo valor da variável resultado será o valor retornado pela operação lógica OU: bool1 || bool2, que retornará true, ja que || verifica se uma das variáveis é verdadeira, no caso bool1
+resultado = !resultado && (bool1 || bool2) // determina que o novo valor da variável resultado será o contrário do valor retornado pela operação lógica OU: bool1 || bool2, que retornará true, ja que || verifica se uma das variáveis é verdadeira, no caso bool1
 console.log("c. ", resultado) // imprime no console a letra "c." e o valor da variável resultado, que será true
 
 console.log("d. ", typeof resultado) // imprime no console a letra "d." e o tipo da variável resultado, que será boolean
@@ -18,11 +18,13 @@ console.log("d. ", typeof resultado) // imprime no console a letra "d." e o tipo
 
 // atividade 2 //
 
-let primeiroNumero = prompt("Digite um número!") // declara a variável primeiroNumero que recebe o valor de um prompt, no qual o valor será dado pelo usuário
+let primeiroNumero = prompt("Digite um número!") 
 
-let segundoNumero = prompt("Digite outro número!") // declara a variável segudoNumero que recebe também o valor de um prompt, no qual o valor será dado pelo usuário
+let segundoNumero = prompt("Digite outro número!") 
 
-const soma = primeiroNumero + segundoNumero // declara a constante soma que recebe o vaor resultando da soma das variáveis primeiroNumero + segundoNumero
+const soma = primeiroNumero + segundoNumero
 
-console.log(soma) // imprime no console o valor da constante soma
+console.log(soma) 
+
+// como o prompt armazena os inputs como strings, o programa irá retornar a concatenaçãodas variavéis //
 
