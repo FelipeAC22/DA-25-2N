@@ -27,4 +27,8 @@ console.log(fraseCenoura.includes("batata"))
 let novaFrase = fraseCenoura.replaceAll("cenoura", "batata")
 console.log(novaFrase)
 
+//ex5//
+
+let listaDeCompras = ["Abacate", "Banana", "Tomate"]
+console.log(listaDeCompras[1])
 
