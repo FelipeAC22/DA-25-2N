@@ -32,3 +32,37 @@ console.log(novaFrase)
 let listaDeCompras = ["Abacate", "Banana", "Tomate"]
 console.log(listaDeCompras[1])
 
+//ex6//
+
+let pokemon = ["Mewtwo", "Eternatus", "Blastoise", "Rayquaza", "Hoopa", "Giratina"]
+console.log(pokemon.length)
+
+//ex7//
+
+let seriesBoas = ["Dexter", "Supernatural", "Mr. robot"]
+console.log(seriesBoas.includes("Supernatural"))
+
+//ex8//
+
+let numeros = [1, 2, 3]
+console.log(numeros)
+
+numeros.push(4, 5, 6)
+console.log(numeros)
+
+//ex9//
+
+let meusPeixes = ["Palhaço", "Mandarim", "Esturjão"]
+meusPeixes.pop()
+console.log(meusPeixes)
+meusPeixes.pop()
+console.log(meusPeixes)
+
+//ex10//
+
+let letras = ["A", "B", "C", "D", "E", "F","G","H"]
+letras.splice(2, 1)
+console.log(letras)
+
+letras.splice(3, 2)
+console.log(letras)

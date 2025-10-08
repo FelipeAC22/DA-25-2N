@@ -15,23 +15,29 @@ let frase = prompt("Escreva uma frase qualquer:")
 console.log(`frase com letras maiúsculas: ${frase.toUpperCase()}`)
 console.log(`frase substituindo todas as letras "o" por "i": ${frase.replaceAll("o", "i")}`)
 console.log(`tamanho da frase: ${frase.length}`)
-*/
+
+
 // atividade 3 
 
-let raçasDeCachorros = ["Pug", "Shih Tzu", "Pastor Alemão", "Rottweiler", "Caramelo"]
-let numeroEscolhido = Number(prompt("Digite um número entre 0 e 4:"))
+let racasDeCachorros = ["Pug", "Shih Tzu", "Pastor Alemão", "Rottweiler", "Caramelo"]
+let numeroEscolhido = Number(prompt("Digite um número de 0 a 4:"))
 
-console.log(`Raça de cahorro correspondente ao número escolhido: ${raçasDeCachorros[numeroEscolhido]}`)
+console.log(`Raça de cahorro correspondente ao número escolhido: ${racasDeCachorros[numeroEscolhido]}`)
+*/
+
+
+
+
 
 // atividade 4 
-/*
+
 let arrayDeNumeros = [1, 2, 3, 4, 5, 6]
 
-console.log(`tamanho do array original: ${arrayDeNumeros.length}`)
+console.log(`\narray original: ${arrayDeNumeros}`)
+console.log(`Tamanho do array original: ${arrayDeNumeros.length}\n`)
 
 arrayDeNumeros.push(7)
 arrayDeNumeros.splice(3, 2)
 
-console.log(`array depois das alterações: ${arrayDeNumeros}`)
-console.log(`novo tamanho do array depois das alterações: ${arrayDeNumeros.length}`)
-*/
+console.log(`Array depois das alterações: ${arrayDeNumeros}`)
+console.log(`Tamanho do array depois das alterações: ${arrayDeNumeros.length}`)
