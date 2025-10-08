@@ -23,3 +23,4 @@ console.log('f. ', valor) // imprime no console a letra f e o valor da constante
 
 const frase = prompt("Digite uma frase") // declara a constante frase que recebe um prompt que irá pedir para o usuário digitar uma frase
 console.log(frase.toUpperCase().replaceAll("A", "I"), frase.length) // primeiro, imprime no console a frase que foi armazenada na constante frase com todas letras maiusculas e com todas letras A substituidas por letras I e depois imprime no console o tamanho da frase
+// se a entrada do usúario for "subi num õnibus em Marrocos" o resultado no console seria "SUBI NUM ÕNIBUS EM MIRROCOS"
