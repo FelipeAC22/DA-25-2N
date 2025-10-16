@@ -52,45 +52,42 @@ switch (pokemonInicial.toUpperCase()) {
 
 // exerc. 5
 
-let alunaHogwarts = Number(prompt(`
-Escolhe o nome pelo seu respectivo número:
+let alunaHogwarts = prompt(`Digite o nome do aluno(a):`)
 
-(1) Hermione
-(2) Ana
-(3) Luna
-(4) Narcisa`))
-
-switch (alunaHogwarts) {
-    case 1:
+switch (alunaHogwarts.toUpperCase()) {
+    case "HERMIONE":
         console.log("você escolheu Hermione! casa de Hogwarts: Grifinória")
         break;
-    case 2:
+    case "ANA":
         console.log("Você escolheu Ana! casa de Hogwarts: Lufa-lufa")
         break;
-    case 3:
+    case "LUNA":
         console.log("Você escolheu Luna! casa de Hogwarts: Corvinal")
         break;
-    case 4:
+    case "NARCISA":
         console.log("Você escolheu Narcisa! casa de Hogwarts: Sonserina")
+        break;
     default:
-        console.log("Escolha um número válido!")
+        console.log("Personagem não encontrado, digite corretamente!")
+        break;
 }
 
 
 // exerc. 6
 
-let ensinoMedio = prompt("Você concluiu o Ensino Médio? (s/n)")
+let ensinoMedio = prompt("Você concluiu o Ensino Médio? (Sim/Não)")
 let idade = Number(prompt("Digite a sua idade:"))
-let cursandoFaculdade = prompt("Você está cursando outra faculdade? (s/n)")
+let cursandoFaculdade = prompt("Você está cursando outra faculdade? (Sim/Não)")
 
-if ((ensinoMedio.toUpperCase() === "S") && (idade >= 18) && (cursandoFaculdade.toUpperCase() === "N")){
-console.log("Parabéns, você pode fazer essa faculdade!")
+if ((ensinoMedio.toUpperCase() === "SIM") && (idade >= 18) && (cursandoFaculdade.toUpperCase() === "NÃO" || cursandoFaculdade.toUpperCase() === "NAO")) {
+    console.log("Parabéns, você pode fazer essa faculdade!")
 } else {
     console.log("Você não pode fazer essa faculdade!")
 }
 */
 
 // DESAFIO
+
 
 let PedraPapelTesoura = Number(prompt(`
 Escolha seu movimento:
@@ -101,7 +98,7 @@ Escolha seu movimento:
 (5) Spock
 `))
 
-let escolhaComputador = choices[Math.floor(Math.random() * 5)]
+let escolhaComputador = (Math.floor(Math.random() * 5)) + 1
 let movimentoInimigo
 
 switch (escolhaComputador) {
@@ -112,10 +109,10 @@ switch (escolhaComputador) {
         movimentoInimigo = "Papel"
         break;
     case 3:
-        movimentoInimigo = "Tesoura"
+        movimentoInimigo = "tesoura"
         break;
     case 4:
-        movimentoInimigo = "Lagarto"
+        movimentoInimigo = "lagarto"
         break;
     case 5:
         movimentoInimigo = "Spock"
@@ -123,82 +120,83 @@ switch (escolhaComputador) {
 }
 
 console.log(`O inimigo escolheu ${movimentoInimigo}!`)
-switch (PedraPapelTesoura, escolhaComputador) {
-    case PedraPapelTesoura === 1 && escolhaComputador === 1:
+switch (`${PedraPapelTesoura}-${escolhaComputador}`) {
+    case "1-1":
         console.log("Ambos escolheram pedra! Empate!")
         break;
-    case PedraPapelTesoura === 1 && escolhaComputador === 2:
+    case "1-2":
         console.log("Você escolheu pedra e pedra é coberta por papel! Derrota!")
         break;
-    case PedraPapelTesoura === 1 && escolhaComputador === 3:
+    case "1-3":
         console.log("Você escolheu pedra e pedra esmaga tesoura! Vitória!")
         break;
-    case PedraPapelTesoura === 1 && escolhaComputador === 4:
+    case "1-4":
         console.log("Você escolheu pedra e pedra esmaga lagarto! Vitória!")
         break;
-    case PedraPapelTesoura === 1 && escolhaComputador === 5:
+    case "1-5":
         console.log("Você escolheu pedra e pedra é vaporizada por spock! Derrota!")
         break;
-    case PedraPapelTesoura === 2 && escolhaComputador === 1:
+    case "2-1":
         console.log("Você escolheu papel e papel cobre pedra! Vitória!")
         break;
-    case PedraPapelTesoura === 2 && escolhaComputador === 2:
-        console.log("Ambos escolheram papel! Empate!")
+    case "2-2":
+        console.log("ambos escolheram papel! Empate!")
         break;
-    case PedraPapelTesoura === 2 && escolhaComputador === 3:
+    case "2-3":
         console.log("Você escolheu papel e papel é cortado por tesoura! Derrota ")
         break;
-    case PedraPapelTesoura === 2 && escolhaComputador === 4:
+    case "2-4":
         console.log("Você escolheu papel e o papel é engolido pelo lagarto! Derrota")
         break;
-    case PedraPapelTesoura === 2 && escolhaComputador === 5:
+    case "2-5":
         console.log("Você escolheu papel e o papel desqualifica o spock! Vitória!")
         break;
-    case PedraPapelTesoura === 3 && escolhaComputador === 1:
+    case "3-1":
         console.log("Você escolheu tesoura e tesoura é esmagada por pedra! Derrota!")
         break;
-    case PedraPapelTesoura === 3 && escolhaComputador === 2:
+    case "3-2":
         console.log("Você escolheu tesoura e tesoura corta o papel! Vitória!")
         break;
-    case PedraPapelTesoura === 3 && escolhaComputador === 3:
+    case "3-3":
         console.log("Ambos escolheram tesoura! Empate!")
         break;
-    case PedraPapelTesoura === 3 && escolhaComputador === 4:
+    case "3-4":
         console.log("Você escolheu tesoura e tesoura decapita o largarto! Vitória!")
         break;
-    case PedraPapelTesoura === 3 && escolhaComputador === 5:
-        console.log("Você escolheu tesoura e tesoura é quebrada pelo spock")
+    case "3-5":
+        console.log("Você escolheu tesoura e tesoura é quebrada pelo spock! Derrota")
         break;
-    case PedraPapelTesoura === 4 && escolhaComputador === 1:
+    case "4-1":
         console.log("Você escolheu lagarto e lagarto é esmagado por pedra! Derrota!")
         break;
-    case PedraPapelTesoura === 4 && escolhaComputador === 2:
+    case "4-2":
         console.log("Você escolheu lagarto e lagarto come papel! Vitória!")
         break;
-    case PedraPapelTesoura === 4 && escolhaComputador === 3:
+    case "4-3":
         console.log("Você escolheu lagarto e lagarto é decapitado por tesoura! Derrota!")
         break;
-    case PedraPapelTesoura === 4 && escolhaComputador === 4:
+    case "4-4":
         console.log("Ambos escolheram lagarto! Empate!")
         break;
-    case PedraPapelTesoura === 4 && escolhaComputador === 5:
+    case "4-5":
         console.log("Você escolheu lagarto e lagarto envenena o spock! Vitória!")
         break;
-    case PedraPapelTesoura === 5 && escolhaComputador === 1:
+    case "5-1":
         console.log("Você escolheu spock e spock vaporiza pedra! Vitória!")
         break;
-    case PedraPapelTesoura === 5 && escolhaComputador === 2:
-        console.log("Você escolheu spock e spock")
+    case "5-2":
+        console.log("Você escolheu spock e spock é desqualificado por papel! Derrota!")
         break;
-    case PedraPapelTesoura === 5 && escolhaComputador === 3:
-        console.log("")
+    case "5-3":
+        console.log("Você escolheu spock e spock quebra tesoura! Vitória!")
         break;
-    case PedraPapelTesoura === 5 && escolhaComputador === 4:
-        console.log("")
+    case "5-4":
+        console.log("Você escolheu spock e spock é envenenado por lagarto! Derrota!")
         break;
-    case PedraPapelTesoura === 5 && escolhaComputador === 5:
-        console.log("")
+    case "5-5":
+        console.log("Ambos escolheram spock! Empate!")
         break;
     default:
+        console.log("movimento nao encontrado, tente novamente!")
         break;
 }
