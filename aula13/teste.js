@@ -1,0 +1,1 @@
+console.log(`use a picareta de madeira: ${velocidadeMadeira}`)
