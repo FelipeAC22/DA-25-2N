@@ -61,7 +61,7 @@ let temFerro = 10
 // estrutura de condicional para determinar se é possivel craftar uma picareta de diamante de acordo com as condições //
 // essa estrutura irá retornar o resultado das comparações //
 
-if ((temGravetos === true || nivelMesaCrafting < 3) && (temDiamantes === true && temFerro >= 8)) {
+if ((temGravetos === false || nivelMesaCrafting < 3) && (temDiamantes === true && temFerro >= 8)) {
     console.log("Picareta de diamante criada! Hora de buscar obsidiana!")
 } else {
     console.log("Faltam recursos ou as condições de crafting não estão sendo atendidas!")
