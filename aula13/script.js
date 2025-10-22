@@ -9,19 +9,18 @@ const velocidadeDiamante = 100
 
 // variavel com valor definido que vai receber o bloco que queremos quebrar//
 
-let blocoMinerar = "obsidiana"
+let blocoMinerar = "minério de diamante"
 
 // estrutura de condicional para determinar qual picareta deve ser usada de acordo com a variavel let blocoMinerar //
 // ela irá imprimir no console o resultado e o valor da velocidade dapicareta que deve ser usada //
 
-if (blocoMinerar === "pedra") {
-    console.log(`Use a picareta de madeira: velocidade: ${velocidadeMadeira}`)
-} else if (blocoMinerar === "obsidiana") {
-    console.log(`Use picareta de diamante: velocidade: ${velocidadeDiamante}`)
-} else if (blocoMinerar === "diamante") {
-    console.log(`Use a picareta de ferro: velocidade: ${velocidadeFerro}`)
-} else (console.log("Qualquer ferramenta funciona, mas a de madeira e a mais simples."))
-
+if (blocoMinerar.toUpperCase() === "MINÉRIO DE DIAMANTE" || blocoMinerar.toUpperCase() === "OBSIDIANA") {
+    console.log(`Use a picareta de diamante: Velocidade ${velocidadeDiamante}`)
+} else if (blocoMinerar.toLocaleUpperCase() === "PEDRA") {
+    console.log(`A picareta de ferro ou pedra é o ideal: Velocidade ferro: ${velocidadeFerro}, velocidade pedra: ${velocidadePedra}`)
+} else {
+    console.log("Qualquer ferramenta funciona, mas a de Madeira a mais simples!")
+}
 
 /*DESAFIO 2*/
 
@@ -29,7 +28,7 @@ if (blocoMinerar === "pedra") {
 
 let danoEspada = 6
 let forcaEncatamento = 1.5
-const armaduraInimiga = 2
+let armaduraInimiga = 2
 let vidaInimiga = 20
 
 // constantes para calcular o dano bruto e o dano final causado (dano resultante depois da defesa do inimigo) //
@@ -55,9 +54,9 @@ if (vidaInimiga <= 0) {
 // constantes e variaveis com valores definidos para o craft //
 
 const temDiamantes = true
-const nivelMesaCrafting = 2
+let nivelMesaCrafting = 2
 const temGravetos = false
-const temFerro = 10
+let temFerro = 10
 
 // estrutura de condicional para determinar se é possivel craftar uma picareta de diamante de acordo com as condições //
 // essa estrutura irá retornar o resultado das comparações //
