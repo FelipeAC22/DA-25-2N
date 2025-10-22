@@ -1,6 +1,31 @@
+/*DESAFIO 1*/
+
+// aqui temos constantes com valores definidos para cada material de ferramenta com seus respectivos valores de velocidade //
+
+const velocidadeMadeira = 30
+const velocidadePedra = 60
+const velocidadeFerro = 90
+const velocidadeDiamante = 100
+
+// variavel com valor definido que vai receber o bloco que queremos quebrar//
+
+let blocoMinerar = "obsidiana"
+
+// estrutura de condicional para determinar qual picareta deve ser usada de acordo com a variavel let blocoMinerar //
+// ela irá imprimir no console o resultado e o valor da velocidade dapicareta que deve ser usada //
+
+if (blocoMinerar === "pedra") {
+    console.log(`Use a picareta de madeira: velocidade: ${velocidadeMadeira}`)
+} else if (blocoMinerar === "obsidiana") {
+    console.log(`Use picareta de diamante: velocidade: ${velocidadeDiamante}`)
+} else if (blocoMinerar === "diamante") {
+    console.log(`Use a picareta de ferro: velocidade: ${velocidadeFerro}`)
+} else (console.log("Qualquer ferramenta funciona, mas a de madeira e a mais simples."))
+
+
 /*DESAFIO 2*/
 
-// variaveis de dano e hp com valores definidos para calcular o combate //
+// variaveis de dano e hp com valores definidos com os status de dano própio e de defesa inimiga //
 
 let danoEspada = 6
 let forcaEncatamento = 1.5
