@@ -16,7 +16,7 @@ let blocoMinerar = "minério de diamante"
 
 if (blocoMinerar.toUpperCase() === "MINÉRIO DE DIAMANTE" || blocoMinerar.toUpperCase() === "OBSIDIANA") {
     console.log(`Use a picareta de diamante: Velocidade ${velocidadeDiamante}`)
-} else if (blocoMinerar.toLocaleUpperCase() === "PEDRA") {
+} else if (blocoMinerar.toUpperCase() === "PEDRA") {
     console.log(`A picareta de ferro ou pedra é o ideal: Velocidade ferro: ${velocidadeFerro}, velocidade pedra: ${velocidadePedra}`)
 } else {
     console.log("Qualquer ferramenta funciona, mas a de Madeira a mais simples!")
@@ -60,14 +60,11 @@ let temFerro = 10
 
 // estrutura de condicional para determinar se é possivel craftar uma picareta de diamante de acordo com as condições //
 // essa estrutura irá retornar o resultado das comparações //
+// agora é necessário que a constante temGravetos seja verdadeira para poder craftar uma picareta de diamante //
+// a variável temFerro foi retirada da da comparação na condicional já que ferro não é necessário para craftar uma picareta de diamante! //
 
-if ((temGravetos === false || nivelMesaCrafting < 3) && (temDiamantes === true && temFerro >= 8)) {
+if ((temGravetos === true || nivelMesaCrafting < 3) && temDiamantes === true) {
     console.log("Picareta de diamante criada! Hora de buscar obsidiana!")
 } else {
     console.log("Faltam recursos ou as condições de crafting não estão sendo atendidas!")
 }
-
-
-
-
-
