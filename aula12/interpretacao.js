@@ -7,7 +7,6 @@ if (numero % 2 === 0) { // inicia uma condicional if onde se o resto da divisão
     console.log("Não passou no teste.")
 }
 
-
 let fruta = prompt("Escolha uma fruta") // declara a variavel fruta que ira armazenar
 let preco
 switch (fruta) {
@@ -28,3 +27,7 @@ switch (fruta) {
         break;
 }
 console.log("O preço da fruta ", fruta, " é ", "R$", preco)
+
+// exibir a fruta escolhida
+// 5
+// O preço da fruta Pêra é R$ 5
