@@ -24,7 +24,7 @@ for (let numero of lista) { // cria um for of que vai percorrer o array lista e 
 // 19, 21, 23, 25, 27, 30
 
 //b)
-// Sim, para acessar o indice de cada elemento o seguinte código poderia ser usado;
+// Não, para acessar o indice de cada elemento o seguinte código poderia ser usado;
 // console.log(lista.indexOf(numero))
 */
 
