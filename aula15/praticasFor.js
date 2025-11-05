@@ -38,5 +38,3 @@ for (let notasDigitadas = 0; notasDigitadas < 5; notasDigitadas++) {
 }
 console.log(`A média das notas é ${somaDasNotas / 5}`)
 */
-
-let listaDePalavras = 
