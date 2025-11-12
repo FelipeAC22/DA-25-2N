@@ -4,7 +4,7 @@ let personagens = [ // array de objetos para os personagens
     { nome: "Kakashi Hatake", idade: 31, estilo: "Ninjutsu", jutsus: ["Chidori / Raikiri (Lâmina de Relâmpago)", "Doton: Doryuuheki (Estilo Terra: Parede de Lama)", "Suiton: Suijinheki (Estilo Água: Parede de Água)", "Kamui (Jutsu de Espaço-Tempo com o Mangekyō Sharingan)"] }
 ]
 
-function adicionarPersonagem() { // funçao para adicionar mais personagens
+function adicionarPersonagem() { // funçao para adicionar mais personagens ao array
     console.clear()
     let perguntaNome = prompt("Qual o nome do personagem que deseja adicionar?")
     let perguntaIdade = Number(prompt("Qual a idade do personagem?"))
@@ -15,18 +15,19 @@ function adicionarPersonagem() { // funçao para adicionar mais personagens
     alert("Personagem adicionado com sucesso!")
 }
 
-function buscarPersonagem() { // funçao para buscar um personagem pelo nome
+function buscarPersonagem() { // funçao para buscar um personagem pelo nome e retornar suas informaçoes
     console.clear()
     let buscarNome = prompt("Qual o nome do personagem que deseja procurar?")
     for (let i = 0; i < personagens.length; i++) {
         if ((personagens[i].nome.toUpperCase()).includes(buscarNome.toUpperCase()) === true) {
-            return personagens[i]
+            let personagemParaExibir = [personagens[i]]
+            return personagemParaExibir
         }
     }
     return "Personagem não encontrado!"
 }
 
-function listarPersonagens() { // funçao para listar tods os personagens
+function listarPersonagens() { // funçao para listar todos os personagens do array
     console.clear()
     console.table(personagens)
 }
@@ -62,4 +63,3 @@ function menu() { // funçao para o menu de escolhas
 }
 
 menu()
-
