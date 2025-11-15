@@ -1,0 +1,12 @@
+eu percebi um erro que eu cometi na linha 148 !!!
+-
+148 - if (personagem.habilidades.includes.toUpperCase()(skill.toUpperCase())) {
+-
+acabei usando .toUpperCase() depois de .includes() e EM UM ARRAY, oque está totalmente errado e acaba quebrando a lógica do código.
+com isso o if/else da função usarSkill não funciona corretamente e o código para de funcionar
+
+para que o código funcionasse corretamente a linha deveria ser:
+
+148 - if (personagem.habilidades.includes(skill)) {
+
+😰😰😰😰😰😰😰😰
