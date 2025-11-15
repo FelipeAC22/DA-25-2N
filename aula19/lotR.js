@@ -201,7 +201,7 @@ function menu() {
     [5] Verificar status
         `))
 
-        switch (opcao) { // switch com os cases para o promptde opts
+        switch (opcao) { // switch com os cases para o prompt de opts
             case 0:
                 alert("Encerrando...")
                 break
