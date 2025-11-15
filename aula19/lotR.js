@@ -10,7 +10,7 @@ let personagens = [ // array de personagens contendo nome, classe, nivel, hp e s
             "Conhecimento Élfico e de Ervas",
             "Ataque Preciso"
         ],
-        historico: []
+        historicoAcoes: []
     },
     {
         nome: "Gandalf",
@@ -23,7 +23,7 @@ let personagens = [ // array de personagens contendo nome, classe, nivel, hp e s
             "Rajada Elemental",
             "Consultar Mente / Previsão"
         ],
-        historico: []
+        historicoAcoes: []
     },
     {
         nome: "Frodo",
@@ -36,7 +36,7 @@ let personagens = [ // array de personagens contendo nome, classe, nivel, hp e s
             "Furtividade",
             "Visão do Mundo Invisível"
         ],
-        historico: []
+        historicoAcoes: []
     },
     {
         nome: "Gimli",
@@ -49,7 +49,7 @@ let personagens = [ // array de personagens contendo nome, classe, nivel, hp e s
             "Determinação Inabalável",
             "Visão no Escuro"
         ],
-        historico: []
+        historicoAcoes: []
     },
     {
         nome: "Legolas",
@@ -62,7 +62,7 @@ let personagens = [ // array de personagens contendo nome, classe, nivel, hp e s
             "Sentidos Aguçados",
             "Caminhar Oculto"
         ],
-        historico: []
+        historicoAcoes: []
     }
 ]
 
@@ -79,7 +79,7 @@ function adicionarPersonagem() { // função que cadastra novos personagens
         nivel: perguntaNivel,
         HP: perguntaHP,
         habilidades: perguntaHabilidades.split(" "),
-        historico: []
+        historicoAcoes: []
     })
     alert("Personagem adicionado com sucesso!")
 }
@@ -94,7 +94,7 @@ function buscarPersonagem() { // função que permite buscar personagens e retor
     return null
 }
 
-function agir() { // funçãp que permite que seja possivel executar ações com cada personagem
+function agir() { // função que permite que seja possivel executar ações com cada personagem
     let personagemEscolhido = buscarPersonagem()
     if (!personagemEscolhido) {
         alert("Personagem não encontrado!")
@@ -134,12 +134,12 @@ function agir() { // funçãp que permite que seja possivel executar ações com
 
 function atacar(personagem) {
     alert(`O personagem ${personagem.nome} atacou!`)
-    personagem.historico.push("Atacou")
+    personagem.historicoAcoes.push("Atacou")
 }
 
 function defender(personagem) {
     alert(`O personagem ${personagem.nome} defendeu!`)
-    personagem.historico.push("Defendeu")
+    personagem.historicoAcoes.push("Defendeu")
 }
 
 function usarSkill(personagem) { // função para verificar se a habilidade escolhida está no array de habilidades do personagem escolhido
@@ -147,7 +147,7 @@ function usarSkill(personagem) { // função para verificar se a habilidade esco
     let skill = prompt("Qual habilidade deseja usar?")
     if (personagem.habilidades.includes.toUpperCase()(skill.toUpperCase())) {
         alert(`O personagem ${personagem.nome} usou a habilidade ${skill}!`)
-        personagem.historico.push(`Usou habilidade: ${skill}`)
+        personagem.historicoAcoes.push(`Usou habilidade: ${skill}`)
     } else {
         alert(`${personagem.nome} não possui a habilidade ${skill}`)
     }
@@ -180,7 +180,7 @@ function verificarStatus() {
     let nome = prompt("Digite o nome do personagem para verificar status:")
     let personagem = personagens.find(p => p.nome.toUpperCase() === nome.toUpperCase())
     if (personagem) {
-        alert(`Status de ${personagem.nome}:\nClasse: ${personagem.classe}\nNível: ${personagem.nivel}\nHP: ${personagem.HP}\nHabilidades: ${personagem.habilidades.join(", ")}\nHistórico: ${personagem.historico.join(", ")}`)
+        alert(`Status de ${personagem.nome}:\nClasse: ${personagem.classe}\nNível: ${personagem.nivel}\nHP: ${personagem.HP}\nHabilidades: ${personagem.habilidades.join(", ")}\nHistórico: ${personagem.historicoAcoes.join(", ")}`)
     } else {
         alert("Personagem não encontrado!")
     }
@@ -231,7 +231,7 @@ menu()
 
 /* 
 
-no código eu usei .join() para imprimir os arrays como uma string única e ainda conseguir adicionar uma virgula após cada elemento
+No código eu usei .join() para imprimir os arrays como uma string única e ainda conseguir adicionar uma virgula após cada elemento
 
 POR EXEMPLO:
 
