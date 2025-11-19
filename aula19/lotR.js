@@ -145,7 +145,7 @@ function defender(personagem) {
 function usarSkill(personagem) { // função para verificar se a habilidade escolhida está no array de habilidades do personagem escolhido
     console.log(`habilidades para selecionar: ${personagem.habilidades}`)
     let skill = prompt("Qual habilidade deseja usar?")
-    if (personagem.habilidades.includes.toUpperCase()(skill.toUpperCase())) {
+    if (personagem.habilidades.includes(skill)) {
         alert(`O personagem ${personagem.nome} usou a habilidade ${skill}!`)
         personagem.historicoAcoes.push(`Usou habilidade: ${skill}`)
     } else {

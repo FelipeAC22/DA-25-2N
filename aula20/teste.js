@@ -1,0 +1,1 @@
+let resultado = Math.floor(Math.random() * 2)

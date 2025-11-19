@@ -47,15 +47,17 @@ function soma(num1, num2) {
 let somaDeNumeros = soma(2, 2)
 
 console.log(`A soma dos números é ${somaDeNumeros}`)
+*/
 
 let arrayDeNUmeros = [2, 6, 7, 10, 12]
 
 function divisao(array) {
-    return novoArray = [arrayDeNUmeros[arrayDeNUmeros.length - 1] / 2, arrayDeNUmeros[0] / 2]
+    return novoArray = [array[array.length - 1] / 2, array[0] / 2]
 }
 
 console.log(divisao(arrayDeNUmeros))
 
+/*
 let somarNumeros = function () {
     let num1 = 2
     let num2 = 2
